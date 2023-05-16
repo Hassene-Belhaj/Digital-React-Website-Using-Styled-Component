@@ -9,6 +9,8 @@ export const GlobalStyles = createGlobalStyle`
         padding: 0;
         margin: 0;
         box-sizing:border-box;
+        font-family: 'poppins',sans-serif;
+        
 }
 
   html {
@@ -159,8 +161,7 @@ export const ButtonStyle = styled.button`
       cursor:pointer;
       &:hover {
       transition : all 0.3s ease-in;
-      background: #fff;
-      color:#6366f1;
+      background: #4e50ee;
       }
 
 `

@@ -39,5 +39,30 @@ export const TextWrap = styled.div`
         padding:0 0 65px 0;
       
     }      
+`
+
+export const TopLine = styled.div`
+color :${({LightTopLine}) =>(LightTopLine ? "#a9b3c1":"#4B59F7" )} ;
+font-size: 18px;
+line-height: 16px;
+letter-spacing: 4px;
+margin-bottom: 16px;
+`
+export const Heading = styled.h1`
+margin-bottom: 24px;
+letter-spacing: 1.3px;
+font-size: 48px;
+line-height: 1.4;
+color: ${({LightText})=>(LightText ?  '#f7f8fa':'#1c2237' )};
+
+`
+
+export const Subtitle = styled.p`
+max-width: 540px;
+margin-bottom: 35px;
+letter-spacing: 1.3px;
+font-size: 18px;
+line-height: 24px;
+color: ${({LightTextdesc})=>(LightTextdesc ? "#f7f8fa":"#1c2237")};
 
 `
