@@ -9,8 +9,9 @@ export const InfoSec = styled.div`
 
     export const InfoRow  = styled.div`
     display: flex;
-    margin: 0 -15px -15px -15px;
     align-items: center;
+    flex-wrap: wrap;
+    margin: 0 -15px -15px -15px;
     flex-direction:${({imgStart})=>(imgStart ? 'row-reverse' : 'row' )};
 `
 
@@ -23,7 +24,7 @@ export const InfoColumn = styled.div`
         max-width: 50%;
         @media screen and (max-width : 768px) {
             max-width: 100%;
-            flex-basis: 100%;
+            flex-basis:100%;
             display: flex;
             justify-content: center;
         }
@@ -35,14 +36,13 @@ export const TextWrap = styled.div`
         padding-bottom: 60px;
         padding-left: 60px;
     @media screen and (max-width : 768px) {
-        text-align:center;
-        padding:0 0 65px 0;
-      
-    }      
+        padding-bottom: 65px;
+    }    
+    
 `
 
 export const TopLine = styled.div`
-color :${({LightTopLine}) =>(LightTopLine ? "#a9b3c1":"#4B59F7" )} ;
+color :${({LightTopLine}) => (LightTopLine ? "#a9b3c1":"#4B59F7" )} ;
 font-size: 18px;
 line-height: 16px;
 letter-spacing: 4px;
@@ -65,4 +65,20 @@ font-size: 18px;
 line-height: 24px;
 color: ${({LightTextdesc})=>(LightTextdesc ? "#f7f8fa":"#1c2237")};
 
+`
+
+export const ImgWrapper = styled.div`
+max-width: 555px;
+display: flex;
+justify-content: ${({start }) =>(start ? 'flex-start' : 'flex-end')};
+
+`
+
+export const Image = styled.img`
+padding-right: 0;
+border: 0;
+max-width: 100%;
+vertical-align: middle;
+display: inline-block;
+max-height : 500px;
 `

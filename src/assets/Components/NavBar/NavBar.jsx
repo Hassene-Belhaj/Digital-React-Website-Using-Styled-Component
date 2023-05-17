@@ -1,13 +1,27 @@
-import React, {useState } from 'react'
+import React, {useEffect, useState } from 'react'
 import { ButtonStyle, Container, DivLogo, NavBarContainer, NavBarSm, NavBarSmContainer, NavBarSmUl, NavBarUl, NavIcon, NavIcon2, NavItem, NavLink } from './NavBar.style'
 
 
 const NavBar = () => {
   const [toggle,setToggle] = useState(false)
+  const [buttonshow,setButtonshow] = useState(true)
 
   const ToggleButton = () => setToggle(!toggle)
   const HandleClose = () =>setToggle(!toggle)
 
+ const showButton = () => {
+   if (window.innerWidth <= 980 ) {
+   setButtonshow(false)
+   } else {
+    setButtonshow(true)
+   }
+  } 
+  
+ window.addEventListener('resize',showButton) 
+  
+ useEffect(()=>{
+ showButton()
+ },[])
 
   return (
    <Container>
@@ -53,9 +67,10 @@ const NavBar = () => {
               <NavLink to={'/contact'}>
                   <NavItem>Contact</NavItem>
               </NavLink>
-                <ButtonStyle width={'110px'} height={'35px'} background={false} color={'#fff'}
+              {buttonshow ? <ButtonStyle  width={'110px'} height={'35px'} background={false} color={'#fff'}
                 font={'1.1rem'}
-                >SIGN UP</ButtonStyle>
+                >SIGN UP</ButtonStyle>  : ''}
+               
             </NavBarUl>
         </NavBarContainer>
         </NavBarSm>

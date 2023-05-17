@@ -9,7 +9,8 @@ export const GlobalStyles = createGlobalStyle`
         padding: 0;
         margin: 0;
         box-sizing:border-box;
-        font-family: 'poppins',sans-serif;
+        font-family: 'source sans pro',sans-serif;
+
         
 }
 
@@ -20,14 +21,20 @@ export const GlobalStyles = createGlobalStyle`
 `
 export const DivLogo = styled.div`
         position: absolute;
-        top:10px;
-        left: 25px;
+        top:15px;
+        left: 65px;
         font-family: "Noto Sans Display",sans-serif;
-        font-size: 0.7rem;
-        letter-spacing: 0.3rem;
+        font-size: 1.1rem;
+        letter-spacing: 0.5rem;
         font-weight: medium;
         z-index: 900;
         color :${({color})=>color};
+        border-bottom: 4px solid #6366f1;
+        border-top:4px solid #6366f1;
+     @media screen and (max-width : 768px) {
+         left:25px;
+
+     }   
 `
 
 export const Container = styled.div`
@@ -43,7 +50,7 @@ export const NavBarContainer = styled.div`
         display: flex;
         justify-content: center;
         width: 100%;
-        height: 60px;
+        height: 80px;
         background-color: ${({color})=> color};
         z-index: 40;
 
@@ -71,10 +78,9 @@ export const NavBarUl = styled.ul`
       align-items: center;
       color: #fff;
       list-style: none;
-      font-size: 0.9rem;
+      font-size: 1.2rem;
       font-family: "Poppins",sans-serif;
-      font-weight: 100;
-      gap: 4rem;
+      gap: 3rem;
       z-index: 600;
       margin-right: 4rem;
 `
@@ -84,7 +90,7 @@ export const NavItem = styled.li`
       &:hover {
       transition: 0.2s ease-in-out;
       cursor: pointer;
-      color :#6366f1;    
+      color :#6366f1; 
 }
 
 `
@@ -107,13 +113,13 @@ export const NavBarSm = styled.div`
 export const NavBarSmUl = styled.ul`
 display: none;
     @media screen and (max-width : 768px) {
-        padding: 4rem 0 0 0 ;
         width: 100%;
         height: 100vh;
         display: flex;
         flex-direction: column;
-        justify-content:center;
         align-items: center;
+        justify-content:center;
+        padding: 4rem 0 0 0 ;
         font-family: "poppins" ,sans-serif;
         color: #fff;
         list-style: none;
@@ -125,7 +131,7 @@ display: none;
 
 export const NavIcon = styled(AiOutlineMenu)`
       position:fixed;
-      top: 10px;
+      top: 25px;
       right: 20px;
       z-index: 400;
 
