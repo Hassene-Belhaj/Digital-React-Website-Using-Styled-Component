@@ -20,7 +20,7 @@ const InfoSection = ({
 }) => {
   return (
     <>
-    <InfoSec LightGb={LightBg}> 
+    <InfoSec LightBg={LightBg}> 
        <Container>
            <InfoRow imgStart={imgStart}>
             <InfoColumn>

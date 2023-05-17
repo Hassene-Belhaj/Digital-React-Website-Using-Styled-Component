@@ -3,8 +3,15 @@ import {styled } from 'styled-components'
 
 export const InfoSec = styled.div`
     color: #fff;
-    padding: 10rem 0 ;
+    padding: 10rem 10rem  ;
+    margin: auto;
     background: ${({LightBg})=>(LightBg ? '#fff':'#1f2937' )};
+    @media screen and (max-width : 1240px) {
+        padding : 10rem 5rem ;
+    }
+    @media screen and (max-width : 680px) {
+        padding : 10rem 2rem ;
+    }
 `
 
     export const InfoRow  = styled.div`
@@ -16,14 +23,12 @@ export const InfoSec = styled.div`
 `
 
 export const InfoColumn = styled.div`
-        margin-bottom: 15px;
-        padding-right: 15px;
-        padding-left: 15px;
+      margin: auto;
         flex: 1;
         flex-basis: 50%;
         max-width: 50%;
         @media screen and (max-width : 768px) {
-            max-width: 100%;
+            max-width: max-content;
             flex-basis:100%;
             display: flex;
             justify-content: center;
@@ -54,6 +59,12 @@ letter-spacing: 1.3px;
 font-size: 48px;
 line-height: 1.4;
 color: ${({LightText})=>(LightText ?  '#f7f8fa':'#1c2237' )};
+@media screen and (max-width : 660px) {
+       font-size: 32px;
+    }  
+    @media screen and (max-width : 520px) {
+       font-size: 24px;
+    }      
 
 `
 
@@ -78,7 +89,6 @@ export const Image = styled.img`
 padding-right: 0;
 border: 0;
 max-width: 100%;
-vertical-align: middle;
 display: inline-block;
 max-height : 500px;
 `

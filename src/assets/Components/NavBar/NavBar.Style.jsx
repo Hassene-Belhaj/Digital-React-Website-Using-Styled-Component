@@ -9,9 +9,7 @@ export const GlobalStyles = createGlobalStyle`
         padding: 0;
         margin: 0;
         box-sizing:border-box;
-        font-family: 'source sans pro',sans-serif;
-
-        
+        font-family: 'source sans pro',sans-serif;     
 }
 
   html {
@@ -29,8 +27,8 @@ export const DivLogo = styled.div`
         font-weight: medium;
         z-index: 900;
         color :${({color})=>color};
-        border-bottom: 4px solid #6366f1;
-        border-top:4px solid #6366f1;
+        border-bottom: 4px solid #4e50ee;
+        border-top:4px solid #4e50ee;
      @media screen and (max-width : 768px) {
          left:25px;
 
@@ -49,7 +47,7 @@ export const Container = styled.div`
 export const NavBarContainer = styled.div`
         display: flex;
         justify-content: center;
-        width: 100%;
+        width:100%;
         height: 80px;
         background-color: ${({color})=> color};
         z-index: 40;
@@ -72,7 +70,7 @@ export const NavBarSmContainer = styled.div`
 `
 
 export const NavBarUl = styled.ul`
-      width: 100%;
+      width: 90%;
       display: flex;
       justify-content:flex-end;
       align-items: center;
@@ -99,8 +97,8 @@ export const NavBarSm = styled.div`
     @media screen and (max-width : 768px)  {
         position: absolute;
         width: 100%;
-        // top 0 right 0 bottom 0 left 0
-        inset: 0;
+         top:0px;
+         bottom:0px;
         left:${({toggle}) =>(toggle ?  0 : "-100%")};
         background:${({color})=>color};
         opacity: 1;
@@ -132,7 +130,7 @@ display: none;
 export const NavIcon = styled(AiOutlineMenu)`
       position:fixed;
       top: 25px;
-      right: 20px;
+      right: 25px;
       z-index: 400;
 
       @media screen and (min-width : 768px) {
@@ -142,8 +140,8 @@ export const NavIcon = styled(AiOutlineMenu)`
 `
 export const NavIcon2 = styled(AiOutlineClose)`
       position:fixed;
-      top: 10px;
-      right: 20px;
+      top: 25px;
+      right: 25px;
       z-index: 400;
 
     @media screen and (min-width : 768px) {
@@ -155,8 +153,8 @@ export const NavIcon2 = styled(AiOutlineClose)`
 export const ButtonStyle = styled.button`
       border-radius: 8px;
       border: none;
-      background : ${({background})=>(background ? '#000' : '#6366f1')} ;
-      width: ${({width})=>width};
+      background : ${({background})=>(background ? '#000' : '#4e50ee')} ;
+      width: ${({width})=>width}; 
       height: ${({height})=>height};
       padding:${({padding})=>padding};
       margin: ${({margin})=>margin};
@@ -167,7 +165,7 @@ export const ButtonStyle = styled.button`
       cursor:pointer;
       &:hover {
       transition : all 0.3s ease-in;
-      background: #4e50ee;
+      background:#6366f1 ;
       }
 
 `
