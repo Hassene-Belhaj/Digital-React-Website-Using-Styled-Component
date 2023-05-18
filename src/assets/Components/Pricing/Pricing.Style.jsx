@@ -2,17 +2,21 @@ import { styled } from 'styled-components'
 import { GiSilverBullet,GiGoldStack } from 'react-icons/gi'
 import { BiDiamond } from 'react-icons/bi'
 
-export const Container = styled.div`
+export const Container= styled.div`
 width: 100%;
 height: 100%;
 background-color:#4B59F7;
 color: #fff;
-padding: 5rem 5rem;
+padding: 2rem 0rem;
 text-align: center;
+@media screen and (max-width:768px) {
+
+}
 `
 export const PricingTitle = styled.h4`
-font-size: 5rem ;
+font-size: 4rem ;
 text-align:center;
+margin: 2rem 0 2.5rem 0;
 `
 export const PricingContainer = styled.div`
 display: flex;
@@ -27,7 +31,8 @@ display : block;
 export const PricingElement = styled.div`
 display: flex;
 justify-content: center;
-width: 400px;
+align-items: center;
+width: 380px;
 height: 600px;
 border-radius: 2%;
 border: none;
@@ -35,12 +40,18 @@ margin: 2rem;
 background:#1c2237 ;
 cursor: pointer;
 transition: all 0.3s ease-in-out;
-@media screen and (max-width:1000px) {
+@media screen and (max-width:768px) {
 display : block;
-margin-left: auto;
-margin-right: auto;
-margin-top: 5rem;
-text-align: center;
+margin:2rem auto;
+width: 65%;
+
+}
+
+@media screen and (max-width:568px) {
+display : block;
+margin:2rem auto;
+width: 90%;
+
 }
 
 &:hover {
@@ -75,7 +86,7 @@ flex-direction: column;
 justify-content: center;
 font-size: 2.5rem;
 color: #fff;
-margin: 0.5rem 0 0 0;
+margin: 0.5rem 0  0;
 font-weight: bold;
 text-align: center;
 `

@@ -1,7 +1,9 @@
 import React from 'react'
 import { 
+ 
+ 
     Container,
-     PricingContainer, 
+     PricingContainer,
      PricingElement, 
      PricingItem, 
      PricingItemIcon,
@@ -10,7 +12,8 @@ import {
      PricingItemSpan, 
      PricingTitle, 
      PricingTitleItem, 
-     Span1} from './Pricing.Style'
+     Span1}
+      from './Pricing.Style'
 import { Button } from '../NavBar/NavBar.style'
 
 const Pricing = () => {

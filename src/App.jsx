@@ -13,7 +13,7 @@ import Footer from './assets/Components/Footer/Footer'
 const App = () => {
   return (
     <Router>
-     <GlobalStyles/>
+     <GlobalStyles />
          <NavBar/>
          <Routes>
             <Route path='/' element={<Home/>} />

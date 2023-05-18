@@ -59,9 +59,9 @@ display: block;
 }
 
 `
-export const FooterLinksItems = styled.h3`
+export const FooterLinksItems = styled.h4`
 margin: 4rem 0 2rem 0;
-font-size: 1.5rem;
+font-size: 2rem;
 text-align:center;
 @media screen and (max-width : 768px) {
 margin : 2rem 0     
@@ -69,14 +69,14 @@ margin : 2rem 0
 `
 
 
-export const FooterLinksTitle = styled.h4`
-font-size: 1.5rem;
+export const FooterLinksTitle = styled.p`
+font-size: 2rem;
 margin: 1.5rem 0;
 text-align:center;
 `
 
 
-export const FooterLinks = styled(Link)`
+export const FooterLinks = styled.p`
 font-size: 1.2rem;
 display: flex;
 flex-direction: column;
