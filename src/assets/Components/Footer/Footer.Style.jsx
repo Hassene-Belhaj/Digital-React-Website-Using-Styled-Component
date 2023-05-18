@@ -16,6 +16,7 @@ color: #fff;
 
 export const FooterTitle = styled.h2`
 font-size: 2rem;
+margin: 1rem 1rem;
 
 margin: rem 0;
 text-align: center;

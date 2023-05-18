@@ -156,13 +156,13 @@ padding: 13px 15px;
 border-radius: 4px;
 display: flex;
 width:${({width})=>width};
+margin: ${({margin})=>margin};
 border: none;
 background: #4e50ee;
 justify-content: center;
 color :#fff;
 font-size: 1.2rem;
 transition : all 0.3s ease-in;
-
 &:hover {
  transition : all 0.3s ease-in;
  background:#6366f1 ;

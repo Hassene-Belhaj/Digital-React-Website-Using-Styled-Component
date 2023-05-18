@@ -1,8 +1,9 @@
 import React from 'react'
+import { Container } from '../Service/Service.Style'
 
 const About = () => {
   return (
-    <div>About</div>
+    <Container style={{marginTop:"80px"}}>About</Container>
   )
 }
 

@@ -3,7 +3,7 @@ import { Container } from './Service.Style'
 
 const Service = () => {
   return (
-    <Container>Service</Container>
+    <Container style={{marginTop:"80px"}}>Service</Container>
   )
 }
 
