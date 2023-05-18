@@ -1,6 +1,6 @@
 import React from 'react'
 import InfoSection from '../../Components/NavBar/InfoSection/InfoSection'
-import { HomeObjOne, HomeObjTwo } from './Data'
+import { HomeObjFour, HomeObjOne, HomeObjThree, HomeObjTwo } from './Data'
 
 
 const Home = () => {
@@ -8,6 +8,7 @@ const Home = () => {
     <>
    <InfoSection {...HomeObjOne} />
    <InfoSection {...HomeObjTwo} />
+   <InfoSection {...HomeObjThree} />
     </>
     )
 }

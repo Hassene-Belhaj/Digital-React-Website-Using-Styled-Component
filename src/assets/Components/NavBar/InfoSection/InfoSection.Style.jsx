@@ -68,7 +68,7 @@ color: ${({LightText})=>(LightText ?  '#f7f8fa':'#1c2237' )};
 
 `
 
-export const Subtitle = styled.p`
+export const Subtitle = styled.h2`
 max-width: 540px;
 margin-bottom: 35px;
 letter-spacing: 1.3px;

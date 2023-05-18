@@ -1,5 +1,5 @@
 import React, {useEffect, useState } from 'react'
-import { ButtonStyle, Container, DivLogo, NavBarContainer, NavBarSm, NavBarSmContainer, NavBarSmUl, NavBarUl, NavIcon, NavIcon2, NavItem, NavLink } from './NavBar.style'
+import {Button, Container, DivLogo, NavBarContainer, NavBarSm, NavBarSmContainer, NavBarSmUl, NavBarUl, NavIcon, NavIcon2, NavItem, NavLink } from './NavBar.style'
 
 
 const NavBar = () => {
@@ -8,6 +8,10 @@ const NavBar = () => {
 
   const ToggleButton = () => setToggle(!toggle)
   const HandleClose = () =>setToggle(!toggle)
+
+
+
+
 
  const showButton = () => {
    if (window.innerWidth <= 980 ) {
@@ -24,12 +28,11 @@ const NavBar = () => {
  },[])
 
   return (
-   <Container>
-       <NavLink to={'/'}>
+
+   <Container>     
        <DivLogo  color={'#fff'}> 
          <h1>ULTRA</h1>      
-       </DivLogo>
-       </NavLink>
+       </DivLogo>   
      <NavBarSmContainer color='#1f2937'>
         {!toggle ? <NavIcon onClick={ToggleButton} size={25} color='white'/>
         : 
@@ -51,7 +54,7 @@ const NavBar = () => {
               <NavLink onClick={HandleClose} to={'/contact'}>
                   <NavItem>Contact</NavItem>
               </NavLink>
-               <ButtonStyle width={'96%'} height={'50px'} background={false} color={'#fff'} font={'1.2rem'}>Get Started</ButtonStyle>
+               <Button width={'96%'} >Get Started</Button>
         </NavBarSmUl>
         <NavBarContainer color={'#1f2937'}>
             <NavBarUl>
@@ -67,14 +70,14 @@ const NavBar = () => {
               <NavLink to={'/contact'}>
                   <NavItem>Contact</NavItem>
               </NavLink>
-              {buttonshow ? <ButtonStyle  width={'110px'} height={'35px'} background={false} color={'#fff'}
-                font={'1.1rem'}
-                >SIGN UP</ButtonStyle>  : ''}
+              {buttonshow ? <Button  width={'110px'} 
+                >SIGN UP</Button>  : ''}
                
             </NavBarUl>
         </NavBarContainer>
         </NavBarSm>
   </Container>
+
   )
 }
 

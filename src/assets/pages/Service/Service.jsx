@@ -1,8 +1,9 @@
 import React from 'react'
+import { Container } from './Service.Style'
 
 const Service = () => {
   return (
-    <div>Service</div>
+    <Container>Service</Container>
   )
 }
 

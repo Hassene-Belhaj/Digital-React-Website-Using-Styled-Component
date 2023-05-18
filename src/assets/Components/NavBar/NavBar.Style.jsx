@@ -18,20 +18,20 @@ export const GlobalStyles = createGlobalStyle`
 }
 `
 export const DivLogo = styled.div`
-        position: absolute;
+        position: fixed;
         top:15px;
         left: 65px;
         font-family: "Noto Sans Display",sans-serif;
         font-size: 1.1rem;
         letter-spacing: 0.5rem;
-        font-weight: medium;
+        font-weight: medium;    
         z-index: 900;
         color :${({color})=>color};
         border-bottom: 4px solid #4e50ee;
         border-top:4px solid #4e50ee;
      @media screen and (max-width : 768px) {
          left:25px;
-
+         position: absolute;
      }   
 `
 
@@ -45,6 +45,7 @@ export const Container = styled.div`
 
 
 export const NavBarContainer = styled.div`
+        position: fixed;
         display: flex;
         justify-content: center;
         width:100%;
@@ -61,7 +62,7 @@ export const NavBarSmContainer = styled.div`
         display: none;
         justify-content: center;
         width: 100%;
-        height: 50px;
+        height: 80px;
         background-color: ${({color})=> color};
         z-index: 100;
         @media screen and (max-width: 768px) {
@@ -150,27 +151,29 @@ export const NavIcon2 = styled(AiOutlineClose)`
 
 `
 
-export const ButtonStyle = styled.button`
-      border-radius: 8px;
-      border: none;
-      background : ${({background})=>(background ? '#000' : '#4e50ee')} ;
-      width: ${({width})=>width}; 
-      height: ${({height})=>height};
-      padding:${({padding})=>padding};
-      margin: ${({margin})=>margin};
-      font-size: ${({font})=>font};
-      color: ${({color})=>color};
-      transition : all 0.3s ease-in;
-      box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
-      cursor:pointer;
-      &:hover {
-      transition : all 0.3s ease-in;
-      background:#6366f1 ;
-      }
+export const Button = styled.button`
+padding: 13px 15px;
+border-radius: 4px;
+display: flex;
+width:${({width})=>width};
+border: none;
+background: #4e50ee;
+justify-content: center;
+color :#fff;
+font-size: 1.2rem;
+transition : all 0.3s ease-in;
 
+&:hover {
+ transition : all 0.3s ease-in;
+ background:#6366f1 ;
+ }
 `
 
 export const NavLink = styled(Link)`
 text-decoration: none;
 color : #fff ;
+:hover {
+text-decoration :2px underline;
+text-underline-offset: 1rem;
+}
 `

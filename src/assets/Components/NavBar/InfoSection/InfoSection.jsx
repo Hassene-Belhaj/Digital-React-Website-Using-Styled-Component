@@ -1,6 +1,6 @@
 import React from 'react'
 import { Heading, Image,ImgWrapper,InfoColumn, InfoRow, InfoSec, Subtitle, TextWrap,TopLine} from './InfoSection.Style'
-import { ButtonStyle, Container } from '../NavBar.style'
+import {Button, Container } from '../NavBar.style'
 
 
 
@@ -28,7 +28,7 @@ const InfoSection = ({
                         <TopLine LightTopLine={LightTopLine}>{topline}</TopLine>
                         <Heading LightText={LightText}>{headline}</Heading>
                         <Subtitle LightTextdesc={LightTextdesc}>{description}</Subtitle>
-                        <ButtonStyle width={'96%'} height={'50px'} background={false} color={'#fff'} font={'1.2rem'}>Get Started</ButtonStyle>
+                        <Button width={'96%'}>Get Started</Button>
                      </TextWrap>
             </InfoColumn>
             <InfoColumn>
