@@ -1,5 +1,5 @@
 import React from 'react'
-import {FooterContainer, FooterIcon1, FooterIcon2, FooterIcon3, FooterIcon4, FooterLinks, FooterLinksItems, FooterLinksTitle, FooterLinkscontainer, FooterLogo, FooterSocial, FooterSubTitle, FooterText, FooterTitle,FooterWrapper,Form,  InputForm } from './Footer.Style'
+import {FooterContainer, FooterFlex, FooterIcon1, FooterIcon2, FooterIcon3, FooterIcon4, FooterLinks, FooterLinksItems, FooterLinksTitle, FooterLinkscontainer, FooterLogo, FooterSocial, FooterSubTitle, FooterText, FooterTitle,FooterWrapper,Form,  InputForm } from './Footer.Style'
 import { Button, DivLogo } from '../NavBar/NavBar.style'
 
 const Footer = () => {
@@ -17,6 +17,7 @@ const Footer = () => {
         </Form>
 
         <FooterLinkscontainer>
+    <FooterFlex>      
         <FooterLinksItems>
         <FooterLinksTitle>
             About Us
@@ -27,37 +28,43 @@ const Footer = () => {
                 <FooterLinks>Investors</FooterLinks>
                 <FooterLinks>term of service</FooterLinks>
             </FooterLinksItems> 
-         <FooterLinksItems>
-        <FooterLinksTitle>
-            Contact Us
-        </FooterLinksTitle>  
-                <FooterLinks>How it works</FooterLinks>
-                <FooterLinks>Testimonials</FooterLinks>
-                <FooterLinks>Careers</FooterLinks>
-                <FooterLinks>Investors</FooterLinks>
-                <FooterLinks>term of service</FooterLinks>
-            </FooterLinksItems>   
-        <FooterLinksItems>
-        <FooterLinksTitle>
-            Videos
-        </FooterLinksTitle>   
-                <FooterLinks>How it works</FooterLinks>
-                <FooterLinks>Testimonials</FooterLinks>
-                <FooterLinks>Careers</FooterLinks>
-                <FooterLinks>Investors</FooterLinks>
-                <FooterLinks>term of service</FooterLinks>
-            </FooterLinksItems> 
-        <FooterLinksItems>
-        <FooterLinksTitle>
-            Social media   
-        </FooterLinksTitle>  
-                <FooterLinks>How it works</FooterLinks>
-                <FooterLinks>Testimonials</FooterLinks>
-                <FooterLinks>Careers</FooterLinks>
-                <FooterLinks>Investors</FooterLinks>
-                <FooterLinks>term of service</FooterLinks>
-            </FooterLinksItems> 
-        </FooterLinkscontainer>
+
+                <FooterLinksItems>
+                <FooterLinksTitle>
+                    Contact Us
+                </FooterLinksTitle>  
+                        <FooterLinks>How it works</FooterLinks>
+                        <FooterLinks>Testimonials</FooterLinks>
+                        <FooterLinks>Careers</FooterLinks>
+                        <FooterLinks>Investors</FooterLinks>
+                        <FooterLinks>term of service</FooterLinks>
+                    </FooterLinksItems>  
+    </FooterFlex>     
+    <FooterFlex>        
+                <FooterLinksItems>
+                <FooterLinksTitle>
+                    Videos
+                </FooterLinksTitle>   
+                        <FooterLinks>How it works</FooterLinks>
+                        <FooterLinks>Testimonials</FooterLinks>
+                        <FooterLinks>Careers</FooterLinks>
+                        <FooterLinks>Investors</FooterLinks>
+                        <FooterLinks>term of service</FooterLinks>
+                    </FooterLinksItems> 
+
+                <FooterLinksItems>
+                <FooterLinksTitle>
+                    Social media   
+                </FooterLinksTitle>  
+                        <FooterLinks>How it works</FooterLinks>
+                        <FooterLinks>Testimonials</FooterLinks>
+                        <FooterLinks>Careers</FooterLinks>
+                        <FooterLinks>Investors</FooterLinks>
+                        <FooterLinks>term of service</FooterLinks>
+                    </FooterLinksItems> 
+        </FooterFlex>                   
+                </FooterLinkscontainer>
+
         <FooterWrapper>
             <FooterLogo><h6>ULTRA</h6></FooterLogo>
              <FooterText><h6>ULTRA 2023</h6></FooterText>

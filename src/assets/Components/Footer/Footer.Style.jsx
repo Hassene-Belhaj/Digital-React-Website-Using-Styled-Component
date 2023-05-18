@@ -16,7 +16,8 @@ color: #fff;
 
 export const FooterTitle = styled.h2`
 font-size: 2rem;
-margin-bottom: 1rem;
+
+margin: rem 0;
 text-align: center;
 `
 export const FooterSubTitle = styled.h3`
@@ -62,7 +63,7 @@ margin: 4rem 0 2rem 0;
 font-size: 1.5rem;
 text-align:center;
 @media screen and (max-width : 768px) {
-margin : 8rem 0     
+margin : 2rem 0     
 }
 `
 
@@ -84,13 +85,14 @@ margin: 15px 0 15px 0;
 `
 
 export const FooterWrapper = styled.div`
-width: 1280px;
+max-width: 1280px;
+width: 900px;
 display: flex;
 flex-direction: row;
 justify-content: space-between;
 align-items:center;
 padding: 3rem 0 5rem 0;
-@media screen and (max-width : 768px) {
+@media screen and (max-width : 1000px) {
 flex-direction: column;
 justify-content: center;
 align-items: center;
@@ -114,16 +116,17 @@ order:2
 export const FlexText = styled.div`
 width: 30%;
 display: flex;
+
 `
 
 export const FooterText = styled.div`
 width: 25%;
 font-size: 1.5rem;
 display: flex;
+justify-content:center;
 @media screen and (max-width : 768px) {
-justify-content : center;
+display    :flex ;
 order: 3;
-
 }
 `
 
@@ -144,3 +147,15 @@ export const FooterIcon4 = styled(BsTwitter)`
 `
 export const FooterIcon5 = styled(BsLinkedin)`
 `
+
+export const FooterFlex =styled.div`
+display: flex;
+gap: 8rem;
+@media screen and (max-width:1000px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+` 
