@@ -19,10 +19,10 @@ export const GlobalStyles = createGlobalStyle`
 `
 export const DivLogo = styled.div`
         position: fixed;
-        top:15px;
+        top:14px;
         left: 65px;
         font-family: "Noto Sans Display",sans-serif;
-        font-size: 1.1rem;
+        font-size: 0.8rem;
         letter-spacing: 0.5rem;
         font-weight: medium;    
         z-index: 900;
@@ -31,7 +31,8 @@ export const DivLogo = styled.div`
         border-top:4px solid #4e50ee;
      @media screen and (max-width : 768px) {
          left:25px;
-         position: absolute;
+         position: fixed;
+         z-index:600;
      }   
 `
 
@@ -49,12 +50,12 @@ export const NavBarContainer = styled.div`
         display: flex;
         justify-content: center;
         width:100%;
-        height: 80px;
+        height: 65px;
         background-color: ${({color})=> color};
         z-index: 40;
-
         @media screen and (max-width: 768px) {
         display:none;
+        
 }
 
 `
@@ -62,11 +63,13 @@ export const NavBarSmContainer = styled.div`
         display: none;
         justify-content: center;
         width: 100%;
-        height: 80px;
+        height: 65px;
         background-color: ${({color})=> color};
-        z-index: 100;
+        z-index: 50;
         @media screen and (max-width: 768px) {
           display: flex;
+          position: fixed;
+                  
 }
 `
 
@@ -96,14 +99,15 @@ export const NavItem = styled.li`
 
 export const NavBarSm = styled.div`
     @media screen and (max-width : 768px)  {
-        position: absolute;
+        position: fixed;
+        margin-top: 4rem;
         width: 100%;
          top:0px;
          bottom:0px;
         left:${({toggle}) =>(toggle ?  0 : "-100%")};
         background:${({color})=>color};
         opacity: 1;
-        z-index:200;
+        z-index:300;
         transition: all 0.4s ease-in-out;
 }   
 
@@ -117,8 +121,7 @@ display: none;
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content:center;
-        padding: 4rem 0 0 0 ;
+        padding-top: 5rem;
         font-family: "poppins" ,sans-serif;
         color: #fff;
         list-style: none;
@@ -130,9 +133,9 @@ display: none;
 
 export const NavIcon = styled(AiOutlineMenu)`
       position:fixed;
-      top: 25px;
+      top: 20px;
       right: 25px;
-      z-index: 400;
+      z-index: 600;
 
       @media screen and (min-width : 768px) {
       display: none;
@@ -141,9 +144,9 @@ export const NavIcon = styled(AiOutlineMenu)`
 `
 export const NavIcon2 = styled(AiOutlineClose)`
       position:fixed;
-      top: 25px;
+      top: 20px;
       right: 25px;
-      z-index: 400;
+      z-index: 1000;
 
     @media screen and (min-width : 768px) {
       display: none;

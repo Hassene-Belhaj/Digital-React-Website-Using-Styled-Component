@@ -16,7 +16,7 @@ text-align: center;
 export const PricingTitle = styled.h4`
 font-size: 4rem ;
 text-align:center;
-margin: 2rem 0 2.5rem 0;
+margin: 3rem 0 2.5rem 0;
 `
 export const PricingContainer = styled.div`
 display: flex;

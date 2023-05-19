@@ -11,6 +11,8 @@ const Home = () => {
    <InfoSection {...HomeObjTwo} />
    <Pricing />
    <InfoSection {...HomeObjThree} />
+   <InfoSection {...HomeObjTwo} />
+
     </>
     )
 }

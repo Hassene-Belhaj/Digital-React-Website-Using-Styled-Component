@@ -48,12 +48,10 @@ const NavBar = () => {
                <NavLink onClick={HandleClose} to={'/service'}>  
                    <NavItem>Service</NavItem>
               </NavLink>
-              <NavLink onClick={HandleClose} to={'/about'}>
-                 <NavItem>About</NavItem>
+              <NavLink onClick={HandleClose} to={'/Product'}>
+                 <NavItem>Product</NavItem>
               </NavLink>
-              <NavLink onClick={HandleClose} to={'/contact'}>
-                  <NavItem>Contact</NavItem>
-              </NavLink>
+    
                <Button width={'96%'} >Get Started</Button>
         </NavBarSmUl>
         <NavBarContainer color={'#1f2937'}>
@@ -64,11 +62,8 @@ const NavBar = () => {
                <NavLink to={'/service'}>  
                    <NavItem>Service</NavItem>
               </NavLink>
-              <NavLink to={'/about'}>
-                 <NavItem>About</NavItem>
-              </NavLink>
-              <NavLink to={'/contact'}>
-                  <NavItem>Contact</NavItem>
+              <NavLink to={'/product'}>
+                 <NavItem>Product</NavItem>
               </NavLink>
               {buttonshow ? <Button  width={'110px'} 
                 >SIGN UP</Button>  : ''}
