@@ -12,7 +12,6 @@ const Home = () => {
    <Pricing />
    <InfoSection {...HomeObjThree} />
    <InfoSection {...HomeObjTwo} />
-
     </>
     )
 }

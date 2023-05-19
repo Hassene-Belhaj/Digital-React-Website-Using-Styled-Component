@@ -40,11 +40,10 @@ margin: 2rem;
 background:#1c2237 ;
 cursor: pointer;
 transition: all 0.3s ease-in-out;
-@media screen and (max-width:768px) {
+@media screen and (max-width:980px) {
 display : block;
 margin:2rem auto;
 width: 65%;
-
 }
 
 @media screen and (max-width:568px) {
@@ -63,6 +62,7 @@ transition: all 0.3s ease-in-out;
 export const PricingItem = styled.div`
 display: flex;
 flex-direction: column;
+
 `
 
 export const PricingItemIcon = styled(GiSilverBullet)`

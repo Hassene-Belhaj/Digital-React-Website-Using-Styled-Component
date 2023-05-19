@@ -85,8 +85,8 @@ margin: 15px 0 15px 0;
 `
 
 export const FooterWrapper = styled.div`
-max-width: 1280px;
-width: 900px;
+max-width: 1380px;
+width: 1200px;
 display: flex;
 flex-direction: row;
 justify-content: space-between;

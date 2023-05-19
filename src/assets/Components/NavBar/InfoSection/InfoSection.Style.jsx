@@ -91,4 +91,5 @@ border: 0;
 max-width: 100%;
 display: inline-block;
 max-height : 500px;
+opacity: 0.7;
 `
