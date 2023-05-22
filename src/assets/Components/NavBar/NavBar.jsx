@@ -28,8 +28,7 @@ const NavBar = () => {
  },[])
 
   return (
-
-   <Container>     
+   <Container>    
        <DivLogo  color={'#fff'}> 
          <h1>ULTRA</h1>      
        </DivLogo>   
@@ -39,7 +38,7 @@ const NavBar = () => {
         <NavIcon2 onClick={ToggleButton} size={25} color='white'/>
       }
       </NavBarSmContainer>
-        <NavBarSm toggle={toggle} color={'#1f2937'}> 
+        <NavBarSm toggle={toggle ? 1 : 0} color={'#1f2937'}> 
 
         <NavBarSmUl >
                <NavLink onClick={HandleClose} to={'/'}>
@@ -72,7 +71,6 @@ const NavBar = () => {
         </NavBarContainer>
         </NavBarSm>
   </Container>
-
   )
 }
 

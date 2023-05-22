@@ -4,35 +4,34 @@ import {Button, Container } from '../NavBar.style'
 
 
 
-
 const InfoSection = ({
-  LightBg,
-  LightTopLine,
-  LightText,
-  LightTextdesc,
+  lightbg,
+  lighttopline,
+  lighttext,
+  lighttextdesc,
   topline,
   headline,
   description,
-  imgStart,
+  imgstart,
   start,
   img,
   alt,
 }) => {
   return (
     <>
-    <InfoSec LightBg={LightBg}> 
+    <InfoSec lightbg={lightbg ? 1 : 0}> 
        <Container>
-           <InfoRow imgStart={imgStart}>
+           <InfoRow imgstart={imgstart ? 1 : 0}>
             <InfoColumn>
                     <TextWrap>
-                        <TopLine LightTopLine={LightTopLine}>{topline}</TopLine>
-                        <Heading LightText={LightText}>{headline}</Heading>
-                        <Subtitle LightTextdesc={LightTextdesc}>{description}</Subtitle>
+                        <TopLine lighttopline={lighttopline ? 1 : 0}>{topline}</TopLine>
+                        <Heading lighttext={lighttext ? 1 : 0}>{headline}</Heading>
+                        <Subtitle lighttextdesc={lighttextdesc ? 1 : 0}>{description}</Subtitle>
                         <Button width={'96%'}>Get Started</Button>
                      </TextWrap>
             </InfoColumn>
             <InfoColumn>
-              <ImgWrapper start={start}>
+              <ImgWrapper start={start ? 1 : 0}>
                 <Image src={img} alt={alt}></Image>
               </ImgWrapper>
             </InfoColumn>

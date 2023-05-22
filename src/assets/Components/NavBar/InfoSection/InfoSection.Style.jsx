@@ -5,7 +5,7 @@ export const InfoSec = styled.div`
     color: #fff;
     padding: 10rem 10rem  ;
     margin: auto;
-    background: ${({LightBg})=>(LightBg ? '#fff':'#1f2937' )};
+    background: ${({lightbg})=>(lightbg ? '#fff':'#1f2937' )};
     @media screen and (max-width : 1240px) {
         padding : 10rem 5rem ;
     }
@@ -19,7 +19,7 @@ export const InfoSec = styled.div`
     align-items: center;
     flex-wrap: wrap;
     margin: 0 -15px -15px -15px;
-    flex-direction:${({imgStart})=>(imgStart ? 'row-reverse' : 'row' )};
+    flex-direction:${({imgstart})=>(imgstart ? 'row-reverse' : 'row' )};
 `
 
 export const InfoColumn = styled.div`
@@ -47,7 +47,7 @@ export const TextWrap = styled.div`
 `
 
 export const TopLine = styled.div`
-color :${({LightTopLine}) => (LightTopLine ? "#a9b3c1":"#4B59F7" )} ;
+color :${({lighttopline}) => (lighttopline ? "#a9b3c1":"#4B59F7" )} ;
 font-size: 18px;
 line-height: 16px;
 letter-spacing: 4px;
@@ -58,7 +58,7 @@ margin-bottom: 24px;
 letter-spacing: 1.3px;
 font-size: 48px;
 line-height: 1.4;
-color: ${({LightText})=>(LightText ?  '#f7f8fa':'#1c2237' )};
+color: ${({lighttext})=>(lighttext ?  '#f7f8fa':'#1c2237' )};
 @media screen and (max-width : 660px) {
        font-size: 32px;
     }  
@@ -74,7 +74,7 @@ margin-bottom: 35px;
 letter-spacing: 1.3px;
 font-size: 18px;
 line-height: 24px;
-color: ${({LightTextdesc})=>(LightTextdesc ? "#f7f8fa":"#1c2237")};
+color: ${({lighttextdesc})=>(lighttextdesc ? "#f7f8fa":"#1c2237")};
 
 `
 

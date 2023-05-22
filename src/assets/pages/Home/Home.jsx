@@ -1,6 +1,6 @@
 import React from 'react'
 import InfoSection from '../../Components/NavBar/InfoSection/InfoSection'
-import { HomeObjFour, HomeObjOne, HomeObjThree, HomeObjTwo } from './Data'
+import {HomeObjOne, HomeObjThree, HomeObjTwo } from './Data'
 import Pricing from '../../Components/Pricing/Pricing'
 
 
