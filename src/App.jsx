@@ -1,12 +1,13 @@
 import React from 'react'
 import {BrowserRouter as Router,Route,Routes } from 'react-router-dom'
-import NavBar from './assets/Components/NavBar/NavBar'
-import { GlobalStyles } from './assets/Components/NavBar/NavBar.style'
-import Home from './assets/pages/Home/Home'
-import Service from './assets/pages/Service/Service'
-import Footer from './assets/Components/Footer/Footer'
-import Product from './assets/pages/Product/Product'
-import ScrollToTop from './assets/Components/ScrollToTop'
+import { GlobalStyles } from './Components/NavBar/NavBar.style'
+import ScrollToTop from './Components/ScrollToTop'
+import NavBar from './Components/NavBar/NavBar'
+import Home from './pages/Home/Home'
+import Service from './pages/Service/Service'
+import Product from './pages/Product/Product'
+import Footer from './Components/Footer/Footer'
+
 
 
 
