@@ -8,8 +8,6 @@ const Service = () => {
     <div>
       <Pricing />  
       <InfoSection {...HomeObjTwo} />
-
-
     </div>
  )
 }
